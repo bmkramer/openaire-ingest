@@ -32,7 +32,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "legalname",
+    "name": "legalName",
     "type": "STRING",
     "mode": "NULLABLE"
   },
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "name": "websiteurl",
+    "name": "websiteUrl",
     "type": "STRING",
     "mode": "NULLABLE"
   }

@@ -1,12 +1,12 @@
 [
   {
-    "name": "databaseaccessrestriction",
+    "name": "databaseAccessRestriction",
     "description": "Access restrinctions to the data source, as defined by re3data.org. One of {feeRequired, registration, other}",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "dateofvalidation",
+    "name": "dateOfValidation",
     "description": "The date of last validation against the OpenAIRE guidelines for the datasource records",
     "mode": "NULLABLE",
     "type": "DATE"
@@ -18,13 +18,13 @@
     "type": "STRING"
   },
   {
-    "name": "pidsystems",
+    "name": "pidSystems",
     "description": "The persistent identifier system that is used by the data source. As defined by re3data.org",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "citationguidelineurl",
+    "name": "citationGuidelineUrl",
     "description": "The URL of the data source providing information on how to cite its items. As defined by re3data.org.",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -36,7 +36,7 @@
     "type": "BOOLEAN"
   },
   {
-    "name": "missionstatementurl",
+    "name": "missionStatementUrl",
     "description": "The URL of a mission statement describing the designated community of the data source. As defined by re3data.org",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -48,7 +48,7 @@
     "type": "STRING"
   },
   {
-    "name": "accessrights",
+    "name": "accessRights",
     "description": "Type of access to the data source, as defined by re3data.org. Possible values: {open, restricted, closed}",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -60,12 +60,12 @@
     "type": "RECORD",
     "fields": [
       {
-        "name": "conferencedate",
+        "name": "conferenceDate",
         "mode": "NULLABLE",
         "type": "STRING"
       },
       {
-        "name": "conferenceplace",
+        "name": "conferencePlace",
         "mode": "NULLABLE",
         "type": "STRING"
       },
@@ -123,7 +123,7 @@
     ]
   },
   {
-    "name": "websiteurl",
+    "name": "websiteUrl",
     "mode": "NULLABLE",
     "type": "STRING"
   },
@@ -140,7 +140,7 @@
     "type": "STRING"
   },
   {
-    "name": "logourl",
+    "name": "logoUrl",
     "mode": "NULLABLE",
     "type": "STRING"
   },
@@ -151,19 +151,19 @@
     "type": "STRING"
   },
   {
-    "name": "officialname",
+    "name": "officialName",
     "description": "The official name of the datasource",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "datauploadrestriction",
+    "name": "dataUploadRestriction",
     "description": "Upload restrictions applied by the datasource, as defined by re3data.org. One of {feeRequired, registration, other}",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "datasourcetype",
+    "name": "type",
     "mode": "NULLABLE",
     "type": "RECORD",
     "fields": [
@@ -182,13 +182,13 @@
     ]
   },
   {
-    "name": "openairecompatibility",
+    "name": "openaireCompatibility",
     "description": "OpenAIRE guidelines the data source comply with. See also https://guidelines.openaire.eu.",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "uploadrights",
+    "name": "uploadRights",
     "description": "Type of data upload. As defined by re3data.org: one of {open, restricted,closed}",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -199,19 +199,19 @@
     "type": "STRING"
   },
   {
-    "name": "englishname",
+    "name": "englishName",
     "description": "The English name of the datasource",
     "mode": "NULLABLE",
     "type": "STRING"
   },
   {
-    "name": "releaseenddate",
+    "name": "releaseEndDate",
     "description": "Date when the data source went offline or stopped ingesting new research data. As defined by re3data.org",
     "mode": "NULLABLE",
     "type": "DATE"
   },
   {
-    "name": "releasestartdate",
+    "name": "releaseStartDate",
     "description": "Releasing date of the data source, as defined by re3data.org",
     "mode": "NULLABLE",
     "type": "DATE"

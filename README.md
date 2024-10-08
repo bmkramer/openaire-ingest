@@ -4,7 +4,7 @@ This repository is for ingesting the OpenAIRE data dump into Google Bigquery. It
 
 ## Tables
 
-The current tables (v6.0.0, August 17 2023) are:
+The current tables (v8.0.0, July 26 2024) are:
 
 - communities_infrastructures
 - organization
@@ -13,12 +13,13 @@ The current tables (v6.0.0, August 17 2023) are:
 - otherresearchproduct_1 (just one part)
 - datasource
 - dataset (2 parts, dataset_1.tar and dataset_2.tar)
-- publication (12 parts, from publciation_1 to publication_12.tar)
-- relation (13 parts, from relation_1.tar to relation_13.tar)
+- publication (13 parts, from publciation_1 to publication_13.tar)
+- relation (12 parts, from relation_1.tar to relation_12.tar)
 
 Please see the following for more information:
 
-https://zenodo.org/records/10037121
+https://zenodo.org/doi/10.5281/zenodo.3516917 (always resolves to the latest version of the dataset)
+
 
 
 ## Installation
@@ -110,6 +111,8 @@ as there were both strings and nulls contained in a list. The "source" field is 
 ## Schemas
 
 Direct schemas (with descriptions) for the following tables are provided on Zenodo:
+
+https://zenodo.org/doi/10.5281/zenodo.4238938 (always resolves to the latest version of the schemas)
 
 - community_infrastructure
 - datasource

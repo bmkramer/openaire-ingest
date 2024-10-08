@@ -31,7 +31,7 @@
   },
   {
     "description": "The URL of the Zenodo community associated to the Research community/Research infrastructure",
-    "name": "zenodo_community",
+    "name": "zenodoCommunity",
     "type": "STRING",
     "mode": "NULLABLE"
   },

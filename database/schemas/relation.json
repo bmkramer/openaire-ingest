@@ -20,7 +20,7 @@
     ]
   },
   {
-    "name": "reltype",
+    "name": "relType",
     "type": "RECORD",
     "mode": "NULLABLE",
     "description": "To represent the semantics of a relation between two entities",

@@ -5,7 +5,7 @@
     "mode": "REPEATED",
     "fields": [
       {
-        "name": "fullname",
+        "name": "fullName",
         "type": "STRING",
         "mode": "NULLABLE"
       },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "name": "bestaccessright",
+    "name": "bestAccessRight",
     "description": "The openest of the access rights of this result.",
     "type": "RECORD",
     "mode": "NULLABLE",
@@ -155,12 +155,12 @@
         "mode": "NULLABLE"
       },
       {
-        "name": "conferenceplace",
+        "name": "conferencePlace",
         "type": "STRING",
         "mode": "NULLABLE"
       },
       {
-        "name": "conferencedate",
+        "name": "conferenceDate",
         "type": "STRING",
         "mode": "NULLABLE"
       }
@@ -211,7 +211,7 @@
     ]
   },
   {
-    "name": "dateofcollection",
+    "name": "dateOfCollection",
     "description": "When OpenAIRE collected the record the last time",
     "type": "STRING",
     "mode": "NULLABLE"
@@ -245,155 +245,71 @@
     "mode": "NULLABLE",
     "fields": [
       {
-        "name": "bipIndicators",
-        "mode": "REPEATED",
-        "type": "RECORD",
-        "fields": [
-          {
-            "name": "indicator",
-            "mode": "NULLABLE",
-            "type": "STRING"
-          },
-          {
-            "name": "class",
-            "mode": "NULLABLE",
-            "type": "STRING"
-          },
-          {
-            "name": "score",
-            "mode": "NULLABLE",
-            "type": "FLOAT"
-          }
-        ]
-      },
-      {
-        "name": "usageCounts",
-        "type": "RECORD",
-        "mode": "REPEATED",
-        "description": "The usage counts (i.e. downloads)",
-        "fields": [
-          {
-            "name": "downloads",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "views",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          }
-        ]
-      },
-      {
-        "name": "id",
-        "type": "RECORD",
-        "mode": "NULLABLE",
-        "fields": [
-          {
-            "name": "views",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "downloads",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          }
-        ]
-      },
-      {
-        "name": "impactMeasures",
+        "name": "citationImpact",
         "description": "The impact measures (i.e. popularity)",
         "type": "RECORD",
         "mode": "NULLABLE",
         "fields": [
           {
-            "name": "popularity_alt",
-            "type": "RECORD",
+            "name": "citationClass",
             "mode": "NULLABLE",
-            "fields": [
-              {
-                "name": "class",
-                "type": "STRING",
-                "mode": "NULLABLE"
-              },
-              {
-                "name": "score",
-                "type": "FLOAT",
-                "mode": "NULLABLE"
-              }
-            ]
+            "type": "STRING"
           },
           {
-            "name": "popularity",
-            "type": "RECORD",
+            "name": "citationCount",
             "mode": "NULLABLE",
-            "fields": [
-              {
-                "name": "class",
-                "type": "STRING",
-                "mode": "NULLABLE"
-              },
-              {
-                "name": "score",
-                "type": "FLOAT",
-                "mode": "NULLABLE"
-              }
-            ]
+            "type": "FLOAT"
+          },
+               {
+            "name": "impulse",
+            "mode": "NULLABLE",
+            "type": "FLOAT"
           },
           {
-            "name": "influence_alt",
-            "type": "RECORD",
+            "name": "impulseClass",
             "mode": "NULLABLE",
-            "fields": [
-              {
-                "name": "class",
-                "type": "STRING",
-                "mode": "NULLABLE"
-              },
-              {
-                "name": "score",
-                "type": "FLOAT",
-                "mode": "NULLABLE"
-              }
-            ]
+            "type": "STRING"
           },
           {
             "name": "influence",
-            "type": "RECORD",
             "mode": "NULLABLE",
-            "fields": [
-              {
-                "name": "class",
-                "type": "STRING",
-                "mode": "NULLABLE"
-              },
-              {
-                "name": "score",
-                "type": "FLOAT",
-                "mode": "NULLABLE"
-              }
-            ]
+            "type": "FLOAT"
           },
           {
-            "name": "impulse",
-            "type": "RECORD",
+            "name": "influenceClass",
             "mode": "NULLABLE",
-            "fields": [
-              {
-                "name": "class",
-                "type": "STRING",
-                "mode": "NULLABLE"
-              },
-              {
-                "name": "score",
-                "type": "FLOAT",
-                "mode": "NULLABLE"
-              }
-            ]
+            "type": "STRING"
+          },
+          {
+            "name": "popularity",
+            "mode": "NULLABLE",
+            "type": "FLOAT"
+          },
+          {
+            "name": "popularityClass",
+            "mode": "NULLABLE",
+            "type": "STRING"
           }
         ]
-      }
+      },
+      {
+        "name": "usageCounts",
+        "description": "The usage counts (i.e. downloads)",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "downloads",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "views",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      }  
     ]
   },
   {
@@ -403,7 +319,7 @@
     "mode": "REPEATED",
     "fields": [
       {
-        "name": "publicationdate",
+        "name": "publicationDate",
         "description": "Date of the research product",
         "type": "DATE",
         "mode": "NULLABLE"
@@ -451,7 +367,7 @@
         "mode": "NULLABLE"
       },
       {
-        "name": "articleprocessingcharge",
+        "name": "articleProcessingCharge",
         "description": "The money spent to make this book or article available in Open Access. Source for this information is the OpenAPC initiative.",
         "type": "RECORD",
         "mode": "NULLABLE",
@@ -489,7 +405,7 @@
         ]
       },
       {
-        "name": "accessright",
+        "name": "accessRight",
         "description": "The accessRights for this materialization of the result",
         "type": "RECORD",
         "mode": "NULLABLE",
@@ -541,13 +457,13 @@
     ]
   },
   {
-    "name": "lastupdatetimestamp",
+    "name": "lastUpdateTimeStamp",
     "description": "Timestamp of last update of the record in OpenAIRE",
     "type": "INTEGER",
     "mode": "NULLABLE"
   },
   {
-    "name": "maintitle",
+    "name": "mainTitle",
     "description": "A name or title by which a scientific result is known. May be the title of a publication, of a dataset or the name of a piece of software.",
     "type": "STRING",
     "mode": "NULLABLE"
@@ -579,7 +495,7 @@
     ]
   },
   {
-    "name": "publicationdate",
+    "name": "publicationDate",
     "description": "Main date of the research product: typically the publication or issued date.",
     "type": "DATE",
     "mode": "NULLABLE"
@@ -647,7 +563,7 @@
     ]
   },
   {
-    "name": "subtitle",
+    "name": "subTitle",
     "description": "Explanatory or alternative name by which a scientific result is known.",
     "type": "STRING",
     "mode": "NULLABLE"
@@ -661,7 +577,7 @@
   {
     "name": "isGreen",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   },
   {
     "name": "openAccessColor",
@@ -671,11 +587,11 @@
   {
     "name": "isInDiamondJournal",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   },
   {
     "name": "publiclyFunded",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "name": "subtitle",
+    "name": "subTitle",
     "description": "Explanatory or alternative name by which a scientific result is known.",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -80,7 +80,7 @@
         "type": "STRING"
       },
       {
-        "name": "accessright",
+        "name": "accessRight",
         "description": "The accessRights for this materialization of the result",
         "mode": "NULLABLE",
         "type": "RECORD",
@@ -111,7 +111,25 @@
         ]
       },
       {
-        "name": "publicationdate",
+        "name": "articleProcessingCharge",
+        "description": "The money spent to make this book or article available in Open Access. Source for this information is the OpenAPC initiative.",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "amount",
+            "type": "FLOAT",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "currency",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "publicationDate",
         "description": "Date of the research product",
         "mode": "NULLABLE",
         "type": "DATE"
@@ -131,7 +149,7 @@
     "type": "STRING"
   },
   {
-    "name": "dateofcollection",
+    "name": "dateOfCollection",
     "description": "When OpenAIRE collected the record the last time",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -175,149 +193,82 @@
       }
     ]
   },
-  {
+{
     "name": "indicators",
     "description": "Indicators computed for this result, for example UsageCount ones",
-    "mode": "NULLABLE",
     "type": "RECORD",
+    "mode": "NULLABLE",
     "fields": [
       {
-        "name": "bipIndicators",
-        "mode": "REPEATED",
+        "name": "citationImpact",
+        "description": "The impact measures (i.e. popularity)",
         "type": "RECORD",
+        "mode": "NULLABLE",
         "fields": [
           {
-            "name": "indicator",
+            "name": "citationClass",
             "mode": "NULLABLE",
             "type": "STRING"
           },
           {
-            "name": "class",
-            "mode": "NULLABLE",
-            "type": "STRING"
-          },
-          {
-            "name": "score",
+            "name": "citationCount",
             "mode": "NULLABLE",
             "type": "FLOAT"
-          }
-        ]
-      },
-      {
-        "name": "impactMeasures",
-        "description": "The impact measures (i.e. popularity)",
-        "mode": "NULLABLE",
-        "type": "RECORD",
-        "fields": [
-          {
-            "name": "influence_alt",
-            "mode": "NULLABLE",
-            "type": "RECORD",
-            "fields": [
-              {
-                "name": "class",
-                "mode": "NULLABLE",
-                "type": "STRING"
-              },
-              {
-                "name": "score",
-                "mode": "NULLABLE",
-                "type": "INTEGER"
-              }
-            ]
           },
-          {
+               {
             "name": "impulse",
             "mode": "NULLABLE",
-            "type": "RECORD",
-            "fields": [
-              {
-                "name": "class",
-                "mode": "NULLABLE",
-                "type": "STRING"
-              },
-              {
-                "name": "score",
-                "mode": "NULLABLE",
-                "type": "INTEGER"
-              }
-            ]
+            "type": "FLOAT"
           },
           {
-            "name": "popularity_alt",
+            "name": "impulseClass",
             "mode": "NULLABLE",
-            "type": "RECORD",
-            "fields": [
-              {
-                "name": "class",
-                "mode": "NULLABLE",
-                "type": "STRING"
-              },
-              {
-                "name": "score",
-                "mode": "NULLABLE",
-                "type": "FLOAT"
-              }
-            ]
-          },
-          {
-            "name": "popularity",
-            "mode": "NULLABLE",
-            "type": "RECORD",
-            "fields": [
-              {
-                "name": "class",
-                "mode": "NULLABLE",
-                "type": "STRING"
-              },
-              {
-                "name": "score",
-                "mode": "NULLABLE",
-                "type": "FLOAT"
-              }
-            ]
+            "type": "STRING"
           },
           {
             "name": "influence",
             "mode": "NULLABLE",
-            "type": "RECORD",
-            "fields": [
-              {
-                "name": "class",
-                "mode": "NULLABLE",
-                "type": "STRING"
-              },
-              {
-                "name": "score",
-                "mode": "NULLABLE",
-                "type": "FLOAT"
-              }
-            ]
+            "type": "FLOAT"
+          },
+          {
+            "name": "influenceClass",
+            "mode": "NULLABLE",
+            "type": "STRING"
+          },
+          {
+            "name": "popularity",
+            "mode": "NULLABLE",
+            "type": "FLOAT"
+          },
+          {
+            "name": "popularityClass",
+            "mode": "NULLABLE",
+            "type": "STRING"
           }
         ]
       },
       {
         "name": "usageCounts",
         "description": "The usage counts (i.e. downloads)",
-        "mode": "NULLABLE",
         "type": "RECORD",
+        "mode": "NULLABLE",
         "fields": [
           {
-            "name": "views",
-            "mode": "NULLABLE",
-            "type": "INTEGER"
+            "name": "downloads",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
           },
           {
-            "name": "downloads",
-            "mode": "NULLABLE",
-            "type": "INTEGER"
+            "name": "views",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
           }
         ]
-      }
+      }  
     ]
   },
   {
-    "name": "maintitle",
+    "name": "mainTitle",
     "description": "A name or title by which a scientific result is known. May be the title of a publication, of a dataset or the name of a piece of software.",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -329,7 +280,7 @@
     "type": "STRING"
   },
   {
-    "name": "lastupdatetimestamp",
+    "name": "lastUpdateTimeStamp",
     "description": "Timestamp of last update of the record in OpenAIRE",
     "mode": "NULLABLE",
     "type": "INTEGER"
@@ -341,7 +292,7 @@
     "type": "STRING"
   },
   {
-    "name": "bestaccessright",
+    "name": "bestAccessRight",
     "description": "The openest of the access rights of this result.",
     "mode": "NULLABLE",
     "type": "RECORD",
@@ -489,13 +440,13 @@
     "type": "STRING"
   },
   {
-    "name": "publicationdate",
+    "name": "publicationDate",
     "description": "Main date of the research product: typically the publication or issued date.",
     "mode": "NULLABLE",
     "type": "DATE"
   },
   {
-    "name": "embargoenddate",
+    "name": "embargoEndDate",
     "description": "Date when the embargo ends and this result turns Open Access",
     "mode": "NULLABLE",
     "type": "STRING"
@@ -566,7 +517,7 @@
         "type": "STRING"
       },
       {
-        "name": "fullname",
+        "name": "fullName",
         "mode": "NULLABLE",
         "type": "STRING"
       }
@@ -575,7 +526,7 @@
   {
     "name": "isGreen",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   },
   {
     "name": "openAccessColor",
@@ -585,11 +536,11 @@
   {
     "name": "isInDiamondJournal",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   },
   {
     "name": "publiclyFunded",
     "mode": "NULLABLE",
-    "type": "BOOL"
+    "type": "BOOLEAN"
   }
 ]
