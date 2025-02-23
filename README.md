@@ -4,7 +4,7 @@ This repository is for ingesting the OpenAIRE data dump into Google Bigquery. It
 
 ## Tables
 
-The current tables (v8.0.0, July 26 2024) are:
+The current tables (v9.0.1, February 11 2025) are:
 
 - communities_infrastructures
 - organization
@@ -14,7 +14,7 @@ The current tables (v8.0.0, July 26 2024) are:
 - datasource
 - dataset (2 parts, dataset_1.tar and dataset_2.tar)
 - publication (13 parts, from publciation_1 to publication_13.tar)
-- relation (12 parts, from relation_1.tar to relation_12.tar)
+- relation (13 parts, from relation_1.tar to relation_13.tar)
 
 Please see the following for more information:
 

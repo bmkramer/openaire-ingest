@@ -3,8 +3,8 @@
 #######################################
 
 workflow_config:  
-  zenodo_url_path: https://zenodo.org/records/12819872 # link to the data dump that you want to download and ingest
-  release_date: "20240726" # Has to be in format YYYYMMDD
+  zenodo_url_path: https://zenodo.org/records/14851262 # link to the data dump that you want to download and ingest
+  release_date: "20250211" # Has to be in format YYYYMMDD
 
   # Path to where the data will be stored for the workflow; enclose in single quotation marks
   working_path:
@@ -21,7 +21,7 @@ workflow_config:
     #  num_parts: 1
 
     relation:
-      num_parts: 12
+      num_parts: 13
 
     publication:
       remove_nulls: source # List of columns to go through to remove unnecessary nulls from lists, e.g. "source": ["Crossref",null]
@@ -47,5 +47,5 @@ cloud_workspace:
   project_id:
   dataset_id:
   bucket_id: openaire_data
-  bucket_folder: 'JULY_2024'
+  bucket_folder: 'FEB_2025'
   data_location: us
