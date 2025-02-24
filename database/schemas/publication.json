@@ -1,6 +1,6 @@
 [
   {
-    "name": "author",
+    "name": "authors",
     "type": "RECORD",
     "mode": "REPEATED",
     "fields": [
@@ -167,13 +167,13 @@
     ]
   },
   {
-    "name": "contributor",
+    "name": "contributors",
     "description": "Contributors for the result",
     "type": "STRING",
     "mode": "REPEATED"
   },
   {
-    "name": "country",
+    "name": "countries",
     "description": "The list of countries associated to this result",
     "type": "RECORD",
     "mode": "REPEATED",
@@ -217,7 +217,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "description",
+    "name": "descriptions",
     "type": "STRING",
     "mode": "REPEATED"
   },
@@ -228,7 +228,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "format",
+    "name": "formats",
     "type": "STRING",
     "mode": "REPEATED"
   },
@@ -313,7 +313,7 @@
     ]
   },
   {
-    "name": "instance",
+    "name": "instances",
     "description": "Each instance is one specific materialisation or version of the result. For example, you can have one result with three instance: one is the pre-print, one is the post-print, one is te published version",
     "type": "RECORD",
     "mode": "REPEATED",
@@ -337,13 +337,13 @@
         "mode": "NULLABLE"
       },
       {
-        "name": "url",
+        "name": "urls",
         "description": "URLs to the instance. They may link to the actual full-text or to the landing page at the hosting source. ",
         "type": "STRING",
         "mode": "REPEATED"
       },
       {
-        "name": "pid",
+        "name": "pids",
         "type": "RECORD",
         "mode": "REPEATED",
         "fields": [
@@ -385,7 +385,7 @@
         ]
       },
       {
-        "name": "alternateIdentifier",
+        "name": "alternateIdentifiers",
         "description": "All the identifiers other than pids forged by an authorithy for the pid type (i.e. Crossref for DOIs",
         "type": "RECORD",
         "mode": "REPEATED",
@@ -469,13 +469,13 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "originalId",
+    "name": "originalIds",
     "description": "Identifiers of the record at the original sources",
     "type": "STRING",
     "mode": "REPEATED"
   },
   {
-    "name": "pid",
+    "name": "pids",
     "description": "Persistent identifiers of the result",
     "type": "RECORD",
     "mode": "REPEATED",
@@ -507,13 +507,13 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "source",
+    "name": "sources",
     "description": "See definition of Dublin Core field dc:source",
     "type": "STRING",
     "mode": "REPEATED"
   },
   {
-    "name": "coverage",
+    "name": "coverages",
     "type": "STRING",
     "mode": "REPEATED"
   },

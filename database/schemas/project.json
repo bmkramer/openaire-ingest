@@ -22,7 +22,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "funding",
+    "name": "fundings",
     "type": "RECORD",
     "mode": "REPEATED",
     "description": "Funding information for the project",
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "name": "h2020Programme",
+    "name": "h2020Programmes",
     "type": "RECORD",
     "mode": "REPEATED",
     "description": "The h2020 programme funding the project",
@@ -139,7 +139,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "subject",
+    "name": "subjects",
     "type": "STRING",
     "mode": "REPEATED"
   },

@@ -17,7 +17,7 @@
     "type": "STRING"
   },
   {
-    "name": "instance",
+    "name": "instances",
     "description": "Each instance is one specific materialisation or version of the result. For example, you can have one result with three instance: one is the pre-print, one is the post-print, one is te published version",
     "mode": "REPEATED",
     "type": "RECORD",
@@ -77,12 +77,12 @@
         "type": "STRING"
       },
       {
-        "name": "url",
+        "name": "urls",
         "mode": "REPEATED",
         "type": "STRING"
       },
       {
-        "name": "alternateIdentifier",
+        "name": "alternateIdentifiers",
         "description": "All the identifiers other than pids forged by an authorithy for the pid type (i.e. Crossref for DOIs",
         "mode": "REPEATED",
         "type": "RECORD",
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "name": "pid",
+        "name": "pids",
         "mode": "REPEATED",
         "type": "RECORD",
         "fields": [
@@ -219,7 +219,7 @@
     "type": "INTEGER"
   },
   {
-    "name": "originalId",
+    "name": "originalIds",
     "description": "Identifiers of the record at the original sources",
     "mode": "REPEATED",
     "type": "STRING"
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "name": "pid",
+    "name": "pids",
     "mode": "REPEATED",
     "type": "RECORD",
     "fields": [
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "name": "geolocation",
+    "name": "geolocations",
     "description": "Geolocation information",
     "mode": "REPEATED",
     "type": "RECORD",
@@ -316,18 +316,18 @@
     ]
   },
   {
-    "name": "coverage",
+    "name": "coverages",
     "mode": "REPEATED",
     "type": "STRING"
   },
   {
-    "name": "contributor",
+    "name": "contributors",
     "description": "Contributors for the result",
     "mode": "REPEATED",
     "type": "STRING"
   },
   {
-    "name": "source",
+    "name": "sources",
     "description": "See definition of Dublin Core field dc:source",
     "mode": "REPEATED",
     "type": "STRING"
@@ -377,7 +377,7 @@
     ]
   },
   {
-    "name": "format",
+    "name": "formats",
     "mode": "REPEATED",
     "type": "STRING"
   },
@@ -387,12 +387,12 @@
     "type": "STRING"
   },
   {
-    "name": "description",
+    "name": "descriptions",
     "mode": "REPEATED",
     "type": "STRING"
   },
   {
-    "name": "country",
+    "name": "countries",
     "description": "The list of countries associated to this result",
     "mode": "REPEATED",
     "type": "RECORD",
@@ -442,7 +442,7 @@
     "type": "STRING"
   },
   {
-    "name": "author",
+    "name": "authors"",
     "mode": "REPEATED",
     "type": "RECORD",
     "fields": [

@@ -42,7 +42,7 @@
     "mode": "NULLABLE"
   },
   {
-    "name": "pid",
+    "name": "pids",
     "description": "Persistent identifiers for the organisation i.e. isni 0000000090326370",
     "type": "RECORD",
     "mode": "REPEATED",

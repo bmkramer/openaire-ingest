@@ -145,7 +145,7 @@
     "type": "STRING"
   },
   {
-    "name": "originalId",
+    "name": "originalIds",
     "description": "Original identifiers for the datasource",
     "mode": "REPEATED",
     "type": "STRING"
@@ -223,7 +223,7 @@
     "type": "STRING"
   },
   {
-    "name": "pid",
+    "name": "pids",
     "description": "Persistent identifiers of the datasource",
     "mode": "REPEATED",
     "type": "RECORD",

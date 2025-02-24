@@ -37,7 +37,7 @@
   },
   {
     "description": "Only for research communities: the list of the subjects associated to the research community",
-    "name": "subject",
+    "name": "subjects",
     "type": "STRING",
     "mode": "REPEATED"
   }
