@@ -6,7 +6,7 @@
     "type": "STRING"
   },
   {
-    "name": "contactpersons",
+    "name": "contactPeople",
     "description": "Only for results with type 'software': Information on the person responsible for providing further information regarding the resource",
     "mode": "REPEATED",
     "type": "STRING"
