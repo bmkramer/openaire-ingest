@@ -120,4 +120,4 @@ https://zenodo.org/doi/10.5281/zenodo.4238938 (always resolves to the latest ver
 - project
 - relation
 
-The rest of the descriptions for the data for the software, publication, dataset and otherresearchproduct tables are stored in the results schema since these are merged into a larger relational table. The relevant descriptions have been pulled out from the results schema and put into the software, publication, dataset and otherresearchproduct schema files.
+The rest of the descriptions for the data for the software, publication, dataset and otherresearchproduct tables are stored in the product schema since these are merged into a larger relational table. The relevant descriptions have been pulled out from the product schema and put into the software, publication, dataset and otherresearchproduct schema files.
