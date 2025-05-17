@@ -241,5 +241,11 @@
         "type": "STRING"
       }
     ]
+  },
+  {
+    "name": "contentTypes",
+    "description": "Types of content in the data source, as defined by OpenDOAR",
+    "mode": "REPEATED",
+    "type": "STRING"
   }
 ]
