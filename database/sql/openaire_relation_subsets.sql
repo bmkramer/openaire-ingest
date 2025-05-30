@@ -4,10 +4,10 @@ SELECT
 
 FROM `academic-observatory.openaire.relation`
 
-WHERE source.type = 'result' AND target.type = 'result'
----WHERE source.type = 'result' AND target.type = 'datasource'
----WHERE source.type = 'result' AND target.type = 'organization'
----WHERE source.type = 'result' AND target.type = 'project'
----WHERE source.type = 'organization' AND target.type = 'project'
----WHERE source.type = 'organization' AND target.type = 'datasource'
----WHERE source.type = `organization' AND target.type = 'organization'
+WHERE sourceType = 'product' AND targetType = 'product' --- not run
+---WHERE sourceType = 'product' AND targetType = 'datasource'
+---WHERE sourceType = 'product' AND targetType = 'organization'
+---WHERE sourceType = 'product' AND targetType = 'project'
+---WHERE sourceType = 'organization' AND targetType = 'project'
+---WHERE sourceType = 'organization' AND ttargetType = 'datasource'
+---WHERE sourceType = `organization' AND targetType = 'organization'
